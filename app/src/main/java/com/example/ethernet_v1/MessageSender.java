@@ -7,19 +7,22 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class MessageSender extends AsyncTask<String,Void,Void> {
+public class MessageSender extends AsyncTask<String,String,String> {
 
     Socket s;
     DataOutputStream dos;
     PrintWriter pw;
 
     @Override
-    protected Void doInBackground(String... voids) {
+    protected String doInBackground(String... voids) {
 
         String message = voids[0];
+        String IP = voids[1];
+        String Port = voids[2];
+
 
         try{
-            s=new Socket("192.168.1.45",1234);
+            s=new Socket(IP,Integer.valueOf(Port));
             pw = new PrintWriter(s.getOutputStream());
             pw.write(message);
             pw.flush();
