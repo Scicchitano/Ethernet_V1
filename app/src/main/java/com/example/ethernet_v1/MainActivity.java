@@ -20,9 +20,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void send (View v){
+    public void sendON (View v){
         MessageSender messageSender = new MessageSender();
-        messageSender.execute(e1.getText().toString(),eIP.getText().toString(),ePort.getText().toString());
+        messageSender.execute("ON",eIP.getText().toString(),ePort.getText().toString());
+
+    }
+
+    public void sendOFF (View v){
+        MessageSender messageSender = new MessageSender();
+        messageSender.execute("OFF",eIP.getText().toString(),ePort.getText().toString());
 
     }
 

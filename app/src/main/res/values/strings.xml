@@ -3,6 +3,7 @@
     <string name="etIP">IP Address</string>
     <string name="etPort">Puerto</string>
     <string name="et1">Ingrese el mensaje</string>
-    <string name="button">Enviar</string>
+    <string name="button2">ON</string>
+    <string name="button3">OFF</string>
     <string name="tvName">Diego Scicchitano</string>
 </resources>
