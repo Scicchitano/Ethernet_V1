@@ -2,7 +2,9 @@
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:text="Seleccione la sala"
     android:textSize="24sp"
     android:padding="10sp"
-    android:textColor="#F44336"
+    android:textColor="#000000"
+    android:background="#AFB6AF"
     xmlns:android="http://schemas.android.com/apk/res/android"/>

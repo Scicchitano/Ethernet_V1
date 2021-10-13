@@ -81,6 +81,7 @@
         android:layout_height="55dp"
         android:layout_marginTop="76dp"
         android:minHeight="48dp"
+        android:text="Seleccione el equipo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

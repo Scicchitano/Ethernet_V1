@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         String [] opciones = {"Casa","Aula1","Aula2","Aula3"}; //Defino un vector de string
 
         // Linkeo el array opciones a un spinner
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, opciones);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.spinner_item_uno, opciones);
         //El spinner que cree arriba lo linkeo al spinner del acivity
         spinner1.setAdapter(adapter);
 
