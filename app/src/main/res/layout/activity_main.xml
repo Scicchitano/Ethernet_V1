@@ -8,46 +8,49 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/etPort"
+        android:id="@+id/et1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="@string/etPort"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etIP" />
-
-    <EditText
-        android:id="@+id/et1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:ems="10"
         android:hint="@string/et1"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPort" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
 
-    <EditText
-        android:id="@+id/etIP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:ems="10"
-        android:hint="@string/etIP"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="112dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="32dp"
+        android:onClick="sendON"
+        android:text="@string/button2"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:backgroundTint="#4CAF50"
+        app:iconTint="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/et1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="112dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="32dp"
+        android:onClick="sendOFF"
+        android:text="@string/button3"
+        android:textColor="#000000"
+        app:backgroundTint="#D52121"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/et1" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -72,33 +75,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="112dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="28dp"
-        android:onClick="sendOFF"
-        android:text="@string/button3"
-        android:textColor="#000000"
-        app:backgroundTint="#D52121"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/et1" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="112dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:layout_marginTop="28dp"
-        android:onClick="sendON"
-        android:text="@string/button2"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:backgroundTint="#4CAF50"
-        app:iconTint="#000000"
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="217dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="76dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et1" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
